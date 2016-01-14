@@ -7,9 +7,8 @@ env:
   global:
     - APP_NAME=citest2-phpmysqlheroku-beta
     - CLEARDB_DATABASE_URL=mysql://shippable@127.0.0.1:3306/test?reconnect=true
-    - secure: 1KCxkLOGLPFKvkY044ZacwIYcGmqWRmhtv7hV9TdetM0rFBJbuOTt1vPCRPMc8nYzAOYnPsqGSgyCN7K/HcS+1HCbtMPgJLctYW+b5o+y0SVred8AMdDEQmcF5JP7DeE7GGJvUvBw53tE1dOXf3AATv8t+QUmrrOIG7uvvkvj+RV2HeNtTRRIP1A6l31wlw9wXc+k/kw41x9BMkzRtki3RKf6CWWh76tJGEm7nitPA5hL1wdkbezrAdkGfD8n0w9oY3Dmt7eWfGWIxNo59FYUm9duNCM9rHyTzTjxQZ2Xgi9oR2004ZhG5cKzSjG44s4Owvq/bbsUMzX7sCIE3gSVQ== 
-    #- secure: MRuHkLbL9HPkJPU5lzkKM1+NOq1S5RrhxEyhJkk60xxYiF7DMzydiBN8oFBjWrSmyGeGRuEC22a0I5ItobdWVszfcJCaXHwtfKzfGOUdKuyCnDgvojXhv/jrBvULyLK6zsLw3b8NMxdnwNsHqSPm19qW/EIGEl9Zv/637Igos69z9aT7+xrEG013+6HtKYb8RHm+iPSNsFoBi/RSAHYuM1eLTZWG2WAkjgzZaYmrHCgNwVmk+HOGR+TOWN7Iu5lrjyvC1XDCQrOvo1hZI30cd9OqJ5aadFm3exQpNhI4I7AgOnCbK3NoWNc/GAnqKXCvsaIQ80Jd/uLIOVyMjD6Xmg==
-
+    - secure: DxrUltn21LffQAjZ5tVMeUoRu/e6vCjBcRk4qfKqWeN4pS9KmXGHuzmXUJwSExDvp7k9mwpPTpmK5ZySsmuVfsUhpJha7QtLkr+cuKAiJbzto+XnJ5lXgBdc8aR0zWMYtuNe0FI5ITikU/bPf51oVhwry/HU3TsQDatiOCZ02MrTyYIYu/d/3VZvNX6jjkZVHbYMHG0IscGmU4QBLnLXMm2A0wrFdXM1r43MUBWM4Nfe1Bwa8vq01hK3IOOWFIGi9d8QYKBjISbf8B6eNvvOV9lEbFludgNHO6MKAYl0Y2RofNyIKMzBBLGB1CGGwzzgJpkMA+ZyaKN1weYFt8iQKQ== 
+    
 before_install:
   - which heroku || wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
   - . $HOME/.rvm/scripts/rvm && rvm use ruby-2.0.0-p598 --default && ruby --version
